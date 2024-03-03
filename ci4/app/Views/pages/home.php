@@ -71,11 +71,24 @@
   'src' => 'js/script.js',
  ];
 
+  $imageProperties1 = [    
+    'src'    => 'images/profilepic.jpg',    
+    'alt'    => 'prof pic',
+    'opacity' => '0',
+    'width' => '300px',
+    'height' => '300px',
+    'transition' => 'opacity 0.5s ease-in-out',
+    'overflow' => 'hidden',
+       
+];
+
 
   
      
 
         echo img($imageProperties);
+        echo img($imageProperties1);
+        
        
         echo link_tag('css/styles.css');
         echo script_tag($script);
